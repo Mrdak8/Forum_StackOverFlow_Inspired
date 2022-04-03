@@ -1,0 +1,45 @@
+img {
+    width: 250px;
+    border-radius: 50px;
+    float: right;
+    margin-right: 10px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+
+  }
+  body{
+    background-color: yellowgreen;
+  }
+  
+  
+  div.registration{
+    background-color:yellowgreen ;
+    background: 0;
+    color: black;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size:large;
+  }
+  div.Überschrift{
+    background-color: yellowgreen;
+    color: white;
+    font-size: 1cm;
+    line-height: 0.2cm;
+    
+  }
+  div.Text{
+    font-size: 0.6cm;
+    line-height:0.3cm;
+    font-weight: bolder;
+  }
+ div.sprache{
+   font-size: large;
+ }
+ div.languageFooter{
+     position:absolute ;
+     bottom: 0.2cm;
+     left: 0.2cm;
+     line-height: 0.1cm;
+ }

@@ -3,6 +3,7 @@
 
 <html lang="de">
   <head>
+    <link rel="stylesheet" href="mystyle.css">
     <title>Find Your Answers</title>
     <meta charset="utf-8" />
     <meta
@@ -11,56 +12,54 @@
     />
     <meta name="keywords" content="HTML,Questions,answers,forums" />
     <meta name="Author" content="Leonard Bingöl" />
-    <style>
-      
-      img {
-        width: 250px;
-        border-radius: 50px;
-        float: left;
-        margin-right: 10px;
-      }
-    </style>
+    
     
   </head>
   <body>
-    <div class="registration">
+    
+    <header>
+      <img
+        src="Images/1280px-Stack_Overflow_logo.svg.png"
+        alt="Picture not found"
+      />
+      <div class="registration">
       <ul>
         <li><a href="Registration.html">Registration</a></li>
         <li><a href="index.html">HomePage</a></li>
       </ul>
     </div>
+    <div class="Überschrift">
     <h1>Find your Answers</h1>
     <h2>And share your knowledge</h2>
-    <header>
-      <p>
+      </div>
+    </header>
+
+    <main>
+      <div class="Text">
+       <p>
         Join the comunity by clicking on the Registration link and signing up
         for free"
       </p>
-    </header>
-    <main>
       <p>
         A public platform building the definitive collection of coding questions
         & answers
       </p>
       <p></p>
-      <p1>A private collaboration & knowledge sharing platform</p1>
-      <p>Inspirde by:</p>
-      <img
-        src="Images/1280px-Stack_Overflow_logo.svg.png"
-        alt="Picture not found"
-      />
+      <p>A private collaboration & knowledge sharing platform</p>
+      </div>
+      
     </main>
     <footer>
-        <br>
-        <br>
-        <br>
-        <h3>Select preffered language</h3>
+      <div class="languageFooter">
+        <h3 class="language">Select preffered language</h3>
         <label for="language">Language:</label>
+        
         <select name="language" id="Language">
             <option value="English">English</option>
             <option value="German">German</option>
             <option value="Slovak">Slovak</option>
         </select>
+      </div>
     </footer>
   </body>
 </html>
