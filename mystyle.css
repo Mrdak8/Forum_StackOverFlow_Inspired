@@ -1,45 +1,81 @@
 img {
-    width: 250px;
-    border-radius: 50px;
-    float: right;
-    margin-right: 10px;
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
+  width: 250px;
+  border-radius: 50px;
+  float: right;
+  margin-right: 10px;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
 
-  }
-  body{
-    background-color: yellowgreen;
-  }
-  
-  
-  div.registration{
-    background-color:yellowgreen ;
-    background: 0;
-    color: black;
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    font-size:large;
-  }
-  div.Überschrift{
-    background-color: yellowgreen;
-    color: white;
-    font-size: 1cm;
-    line-height: 0.2cm;
-    
-  }
-  div.Text{
-    font-size: 0.6cm;
-    line-height:0.3cm;
-    font-weight: bolder;
-  }
- div.sprache{
-   font-size: large;
+}
+
+body {
+  background-color: yellowgreen;
+}
+
+
+div.registration {
+  background-color: yellowgreen;
+  background: 0;
+  color: black;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: large;
+}
+
+div.Überschrift {
+  background-color: yellowgreen;
+  color: white;
+  font-size: 1cm;
+  line-height: 0.2cm;
+
+}
+@font-face {
+  font-family: "My Font";
+  src: url(https://fonts.googleapis.com/css2?family=Akronim&display=swap) format("truetype");
+} 
+div.Text {
+  font-size: 0.7cm;
+  line-height: 0.4cm;
+  font-weight: bolder;
+  font-family: "My Font",Verdana,Tahoma;
+}
+
+p{
+  font-style: oblique;
+}
+
+
+ #Sprache{
+  position: absolute;
+  bottom: 0.5cm;
+  left: 0.15cm;
+  line-height:0.1cm;
+  font-size: large;
  }
- div.languageFooter{
-     position:absolute ;
-     bottom: 0.2cm;
-     left: 0.2cm;
-     line-height: 0.1cm;
- }
+p.WorkInProgress{
+  font-size: 3cm;
+  font-variant-position: normal;
+  font-style: italic;
+  border: 1cm;
+  border-color: red;
+  color: rgb(255, 0, 0);
+  border: 30px solid green;
+  padding: 25px;
+  margin: 150px;
+  text-align: center;
+}
+#Admin{
+  position: absolute;
+  bottom: 2cm;
+  left: 0cm;
+  font-size: 2cm;
+  align-content: center;
+}
+
+#Registration{
+  font-size: 0.7cm;
+  align-self: center;
+
+}

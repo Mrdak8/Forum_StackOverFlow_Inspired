@@ -16,29 +16,26 @@
     
   </head>
   <body>
+
+  <header>
     
-    <header>
-      <img
-        src="Images/1280px-Stack_Overflow_logo.svg.png"
-        alt="Picture not found"
-      />
-      <div class="registration">
+    <div class="registration">
       <ul>
         <li><a href="Registration.html">Registration</a></li>
         <li><a href="index.html">HomePage</a></li>
       </ul>
     </div>
     <div class="Überschrift">
-    <h1>Find your Answers</h1>
-    <h2>And share your knowledge</h2>
-      </div>
-    </header>
+      <h1>Find your Answers</h1>
+      <h2>And share your knowledge</h2>
+    </div>
+  </header>
 
-    <main>
-      <div class="Text">
-       <p>
+  <main>
+    <div class="Text">
+      <p>
         Join the comunity by clicking on the Registration link and signing up
-        for free"
+        for free
       </p>
       <p>
         A public platform building the definitive collection of coding questions
@@ -46,20 +43,24 @@
       </p>
       <p></p>
       <p>A private collaboration & knowledge sharing platform</p>
-      </div>
-      
-    </main>
-    <footer>
-      <div class="languageFooter">
-        <h3 class="language">Select preffered language</h3>
-        <label for="language">Language:</label>
-        
-        <select name="language" id="Language">
-            <option value="English">English</option>
-            <option value="German">German</option>
-            <option value="Slovak">Slovak</option>
-        </select>
-      </div>
-    </footer>
-  </body>
+    </div>
+
+  </main>
+  <footer>
+    <div id="Sprache">
+      <h3 class="language">Select preffered language</h3>
+      <label for="language">Language:</label>
+      <select id="Language" name="" onchange="javascript:location.href = this.value;">
+        <option value="English">English</option>
+        <option value="languageSelector.html">German</option>
+        <option value="languageSelector.html">Slovak</option>
+      </select>
+    </div>
+    <img src="Images/1280px-Stack_Overflow_logo.svg.png" alt="Picture not found" />
+
+  </footer>
+  
+
+</body>
+
 </html>

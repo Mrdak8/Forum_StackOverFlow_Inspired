@@ -4,61 +4,91 @@
 <head>
 
 
-    <link rel="stylesheet" href="mystyle.css">
-    <title>Find Your Answers</title>
-    <meta charset="utf-8" />
-    <meta name="description" content="Here you can create new account to share and broaden your knowledge">
-    <meta name="keywords" content="HTML,questions,registration,account">
-    <meta name="Author" content="Leonard Bingöl">
+   <link rel="stylesheet" href="mystyle.css">
+   <title>Find Your Answers</title>
+   <meta charset="utf-8" />
+   <meta name="description" content="Here you can create new account to share and broaden your knowledge">
+   <meta name="keywords" content="HTML,questions,registration,account">
+   <meta name="Author" content="Leonard Bingöl">
 
 
 </head>
 
 <body>
-    <div class="registration">
-        <ul>
+   <div class="registration">
+      <ul>
 
-            <li><a href="Registration.html">Registrierung</a></li>
-            <li><a href="index.html">HomePage</a></li>
+         <li><a href="Registration.html">Registrierung</a></li>
+         <li><a href="index.html">HomePage</a></li>
 
 
 
-        </ul>
-    </div>
-    <div class="Überschrift">
-        <h1>Registration</h1>
-        <h2>You can register/log in here</h2>
-    </div>
-    <header>
-        <img src="Images/1280px-Stack_Overflow_logo.svg.png" alt="Picture not found" />
+      </ul>
+   </div>
+   <div class="Überschrift">
+      <h1>Registration</h1>
+      <h2>You can register/log in here</h2>
+   </div>
+   <header>
+      
+      
+   </header>
+   <main>
+      <div id="Registration">
+      <label for="Gender">Your Gender: </label>
+      <select name="Geschlecht" id="Gender">
+         <option value="Männlich">Male</option>
+         <option value="Weiblich">Female</option>
+      </select>
+      <br>
+      <label for="Name">First Name:</label>
+      <input type="text" name="Name" id="Name" > 
+      <br>
+      <label for="LastName">Last Name: </label>
+      <input type="text" name="Last Name" id="LastName">
+      <br>
+      <label id="Datum" for="Date">Your Birthday: </label>
+      <input type="Date" name="" id="Date">
+      <br>
+      <label for="Email">Your E-mail:</label>
+      <input type="text" name="" id="Email">
+      <br>
+      <label for="Password">Your Password:</label>
+      <input type="Password"name="" id="Password">
+      <br>
+      <label for="password_confirm">Confirm your Password:</label>
+      <input name="password_confirm" type="password" id="password_confirm" oninput="check(this)" />
+<script language='javascript' type='text/javascript'>
+    function check(input) {
+        if (input.value != document.getElementById('password').value) {
+            input.setCustomValidity('Password Must be Matching.');
+        } else {
+            // input is valid -- reset the error message
+            input.setCustomValidity('');
+        }
+    }
+</script>
+<br /><br />
+<input type="submit" />
 
-        <thead>
-            <tr>
-                <th colspan="3">Sign in</th>
-            </tr>
+   </div>
+   </main>
+   <footer>
+      <div id="Sprache">
+         <h3>Select preffered language</h3>
+         <label for="language">Language:</label>
+         <select id="Language" name="" onchange="javascript:location.href = this.value;">
+            <option value="English">English</option>
+            <option value="languageSelector.html">German</option>
+            <option value="languageSelector.html">Slovak</option>
 
-            </table>
-    </header>
-    <main>
-        <h1>Looking for admins with general knowledge and some time</h1>
-        <label for="Gender">Your Gender: </label>
-        <select name="Geschlecht" id="Gender">
-            <option value="Männlich">Male</option>
-            <option value="Weiblich">Female</option>
-        </select>
-    </main>
-    <footer>
-        <div class="languageFooter">
-            <h3>Select preffered language</h3>
-            <label for="language">Language:</label>
-            <select name="language" id="Language">
-                <option value="English">English</option>
-                <option value="German">German</option>
-                <option value="Slovak">Slovak</option>
-            </select>
-        </div>
-    </footer>
+         
+          </select>
+      </div>
+      <img src="Images/1280px-Stack_Overflow_logo.svg.png" alt="Picture not found" />
 
+   </footer>
+   <h1 id="Admin">Looking for admins with general knowledge and some time</h1>
 </body>
 
 </html>
