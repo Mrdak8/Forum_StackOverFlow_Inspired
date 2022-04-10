@@ -79,3 +79,17 @@ p.WorkInProgress{
   align-self: center;
 
 }
+@keyframes pulse {
+  20% {
+    padding: 30px;
+    background-color: rgb(134, 201, 89);
+  }
+}
+#Admin {
+  border: 1px solid black;
+  width: fit-content;
+  background-color: yellow;
+  padding: 10px;
+  animation: pulse 3s;
+  animation-iteration-count: infinite;
+}
