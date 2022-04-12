@@ -31,15 +31,26 @@ div.Überschrift {
   line-height: 0.2cm;
 
 }
+
 @font-face {
-  font-family: "My Font";
-  src: url(https://fonts.googleapis.com/css2?family=Akronim&display=swap) format("truetype");
-} 
+  font-family: 'Amiko';
+  font-style: normal;
+  font-weight: 500;
+  
+
+  src: local(''),
+       url('C:\Users\leobi\Desktop\Fonts\amiko-v10-latin-regular.woff') format('woff2'), 
+       url('C:\Users\leobi\Desktop\Fonts\amiko-v10-latin-regular.woff') format('woff'); 
+      }
+
+ 
+ 
 div.Text {
-  font-size: 0.7cm;
+  font-family: 'Amiko' ;
+  font-size: 1cm;
   line-height: 0.4cm;
-  font-weight: bolder;
-  font-family: "My Font",Verdana,Tahoma;
+  font-weight:400;
+  
 }
 
 p{
@@ -55,9 +66,10 @@ p{
   font-size: large;
  }
 p.WorkInProgress{
-  font-size: 3cm;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2cm;
   font-variant-position: normal;
-  font-style: italic;
+  font-style:normal
   border: 1cm;
   border-color: red;
   color: rgb(255, 0, 0);
@@ -66,30 +78,30 @@ p.WorkInProgress{
   margin: 150px;
   text-align: center;
 }
-#Admin{
-  position: absolute;
-  bottom: 2cm;
-  left: 0cm;
-  font-size: 2cm;
-  align-content: center;
-}
+
 
 #Registration{
-  font-size: 0.7cm;
+  font-size: 100%;
   align-self: center;
 
 }
 @keyframes pulse {
   20% {
-    padding: 30px;
-    background-color: rgb(134, 201, 89);
+    padding: 7px;
+    background-color: rgb(94, 255, 0);
   }
 }
 #Admin {
-  border: 1px solid black;
+  
+  border: 3px solid black;
   width: fit-content;
-  background-color: yellow;
-  padding: 10px;
-  animation: pulse 3s;
+  background-color: rgb(255, 0, 0);
+  padding: 3px;
+  animation: pulse 1.5s;
   animation-iteration-count: infinite;
+  align-items: center;
+}
+#Admin:hover{
+ outline: dotted red 50%; 
+
 }
