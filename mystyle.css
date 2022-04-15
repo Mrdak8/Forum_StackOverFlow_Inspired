@@ -105,3 +105,18 @@ p.WorkInProgress{
  outline: dotted red 50%; 
 
 }
+h3.language{
+  font-size: medium;
+}
+label.language{
+  font-size: medium;
+  font-weight: bolder;
+  font-style: oblique;
+}
+div.Überschrift:hover{
+color: black;
+
+}
+div.Überschrift:checked{
+src: url("hhtps://stackoverflow.com");
+}
