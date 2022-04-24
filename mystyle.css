@@ -15,20 +15,23 @@ body {
 
 
 div.registration {
-  background-color: yellowgreen;
-  background: 0;
-  color: black;
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  font-size: large;
+
+text-align: right;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+
 }
 
+
 div.Überschrift {
-  background-color: yellowgreen;
+  position: fixed;
+  top: 0cm;
   color: white;
   font-size: 1cm;
-  line-height: 0.2cm;
+  line-height: 0cm;
+  text-align: left;
+  padding: 0;
+  margin: 0;
 
 }
 
@@ -36,87 +39,131 @@ div.Überschrift {
   font-family: 'Amiko';
   font-style: normal;
   font-weight: 500;
-  
+
 
   src: local(''),
-       url('C:\Users\leobi\Desktop\Fonts\amiko-v10-latin-regular.woff') format('woff2'), 
-       url('C:\Users\leobi\Desktop\Fonts\amiko-v10-latin-regular.woff') format('woff'); 
-      }
-
- 
- 
-div.Text {
-  font-family: 'Amiko' ;
-  font-size: 1cm;
-  line-height: 0.4cm;
-  font-weight:400;
-  
+    url('C:\Users\leobi\Desktop\Fonts\amiko-v10-latin-regular.woff') format('woff2'),
+    url('C:\Users\leobi\Desktop\Fonts\amiko-v10-latin-regular.woff') format('woff');
 }
 
-p{
+
+
+div.Text {
+  font-family: 'Amiko';
+  font-size: 1cm;
+  line-height: 0.4cm;
+  font-weight: 400;
+  position: relative;
+  top: +1.7em;
+}
+div.Formular{
+  font-family: 'Amiko';
+  font-size: 0.7cm;
+  line-height: 0.4cm;
+  font-weight: 200;
+  position: relative;
+  top: +2.7em;
+  line-height: normal;
+}
+#Submit{
+  position: relative;
+  top: 4em;
+}
+
+p {
   font-style: oblique;
 }
 
 
- #Sprache{
+#Sprache {
   position: absolute;
   bottom: 0.5cm;
   left: 0.15cm;
-  line-height:0.1cm;
+  line-height: 0.1cm;
   font-size: large;
- }
-p.WorkInProgress{
+}
+
+p.WorkInProgress {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 1.2cm;
+  font-size: 2cm;
   font-variant-position: normal;
-  font-style:normal
-  border: 1cm;
+  font-style: normal border 2cm;
   border-color: red;
-  color: rgb(255, 0, 0);
+  color: white;
   border: 30px solid green;
-  padding: 25px;
+  padding: 15px;
   margin: 150px;
   text-align: center;
 }
 
 
-#Registration{
-  font-size: 100%;
-  align-self: center;
 
+a{
+  color: white;
+}
+a:hover{
+  color: black;
 }
 @keyframes pulse {
   20% {
     padding: 7px;
     background-color: rgb(94, 255, 0);
   }
+
 }
+
+@keyframes pulse_subtle {
+  60% {
+    padding: 22px;
+
+  }
+}
+
 #Admin {
-  
+
   border: 3px solid black;
   width: fit-content;
   background-color: rgb(255, 0, 0);
   padding: 3px;
   animation: pulse 1.5s;
   animation-iteration-count: infinite;
-  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 2em;
 }
-#Admin:hover{
- outline: dotted red 50%; 
 
-}
-h3.language{
+
+
+h3.language {
   font-size: medium;
 }
-label.language{
+
+label.language {
   font-size: medium;
   font-weight: bolder;
   font-style: oblique;
 }
-div.Überschrift:hover{
-color: black;
+
+div.Überschrift:hover {
+  color: black;
 
 }
-div.Überschrift:checked{
-src: url("hhtps://stackoverflow.com");
+
+
+
+#Back {
+  font-size: 3cm;
+  color: whitesmoke;
+  position: fixed;
+  left: 16cm;
+
+}
+
+#Back:hover {
+  animation: pulse_2 2s;
+  font-size: 5cm;
+  position: fixed;
+  left: 12cm;
+  color: black;
+  cursor: pointer;
 }

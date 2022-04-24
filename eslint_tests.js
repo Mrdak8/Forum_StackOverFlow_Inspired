@@ -1,2 +1,3 @@
-const test = 0
+const test = 9;
+
 console.log(test);
