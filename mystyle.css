@@ -1,169 +1,158 @@
 img {
-  width: 250px;
-  border-radius: 50px;
-  float: right;
-  margin-right: 10px;
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-
+    width: 250px;
+    border-radius: 50px;
+    float: right;
+    margin-right: 10px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
 }
 
 body {
-  background-color: yellowgreen;
+    background-color: yellowgreen;
 }
-
 
 div.registration {
-
-text-align: right;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bolder;
-
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
 }
 
-
 div.Überschrift {
-  position: fixed;
-  top: 0cm;
-  color: white;
-  font-size: 1cm;
-  line-height: 0cm;
-  text-align: left;
-  padding: 0;
-  margin: 0;
-
+    position: fixed;
+    top: 0cm;
+    color: white;
+    font-size: 1cm;
+    line-height: 0cm;
+    text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
 @font-face {
-  font-family: 'Amiko';
-  font-style: normal;
-  font-weight: 500;
-
-
-  src: local(''),
-    url('C:\Users\leobi\Desktop\Fonts\amiko-v10-latin-regular.woff') format('woff2'),
-    url('C:\Users\leobi\Desktop\Fonts\amiko-v10-latin-regular.woff') format('woff');
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''), url('C:\Users\leobi\Desktop\Fonts\amiko-v10-latin-regular.woff') format('woff2'), url('C:\Users\leobi\Desktop\Fonts\amiko-v10-latin-regular.woff') format('woff');
 }
-
-
 
 div.Text {
-  font-family: 'Amiko';
-  font-size: 1cm;
-  line-height: 0.4cm;
-  font-weight: 400;
-  position: relative;
-  top: +1.7em;
+    font-family: 'Amiko';
+    font-size: 1cm;
+    line-height: 0.4cm;
+    font-weight: 400;
+    position: relative;
+    top: +1.7em;
 }
-div.Formular{
-  font-family: 'Amiko';
-  font-size: 0.7cm;
-  line-height: 0.4cm;
-  font-weight: 200;
-  position: relative;
-  top: +2.7em;
-  line-height: normal;
+
+div.Formular {
+    font-family: 'Amiko';
+    font-size: 0.7cm;
+    line-height: 0.4cm;
+    font-weight: 200;
+    position: relative;
+    top: +2.7em;
+    line-height: normal;
 }
-#Submit{
-  position: relative;
-  top: 4em;
+
+#Submit {
+    position: relative;
+    top: 4em;
 }
 
 p {
-  font-style: oblique;
+    font-style: oblique;
 }
 
-
 #Sprache {
-  position: absolute;
-  bottom: 0.5cm;
-  left: 0.15cm;
-  line-height: 0.1cm;
-  font-size: large;
+    position: absolute;
+    bottom: 0.5cm;
+    left: 0.15cm;
+    line-height: 0.1cm;
+    font-size: large;
 }
 
 p.WorkInProgress {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 2cm;
-  font-variant-position: normal;
-  font-style: normal border 2cm;
-  border-color: red;
-  color: white;
-  border: 30px solid green;
-  padding: 15px;
-  margin: 150px;
-  text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2cm;
+    font-variant-position: normal;
+    font-style: normal border 2cm;
+    border-color: red;
+    color: white;
+    border: 30px solid green;
+    padding: 15px;
+    margin: 150px;
+    text-align: center;
 }
 
-
-
-a{
-  color: white;
+a {
+    color: white;
 }
-a:hover{
-  color: black;
+
+a:hover {
+    color: black;
 }
+
 @keyframes pulse {
-  20% {
-    padding: 7px;
-    background-color: rgb(94, 255, 0);
-  }
-
+    20% {
+        padding: 7px;
+        background-color: rgb(94, 255, 0);
+    }
 }
 
 @keyframes pulse_subtle {
-  60% {
-    padding: 22px;
-
-  }
+    60% {
+        padding: 22px;
+    }
 }
 
 #Admin {
-
-  border: 3px solid black;
-  width: fit-content;
-  background-color: rgb(255, 0, 0);
-  padding: 3px;
-  animation: pulse 1.5s;
-  animation-iteration-count: infinite;
-  text-align: center;
-  position: relative;
-  top: 2em;
+    border: 3px solid black;
+    width: fit-content;
+    background-color: rgb(255, 0, 0);
+    padding: 3px;
+    animation: pulse 1.5s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    position: relative;
+    top: 2em;
 }
 
-
-
 h3.language {
-  font-size: medium;
+    font-size: medium;
 }
 
 label.language {
-  font-size: medium;
-  font-weight: bolder;
-  font-style: oblique;
+    font-size: medium;
+    font-weight: bolder;
+    font-style: oblique;
 }
 
 div.Überschrift:hover {
-  color: black;
-
+    color: black;
 }
 
-
-
 #Back {
-  font-size: 3cm;
-  color: whitesmoke;
-  position: fixed;
-  left: 16cm;
-
+    font-size: 3cm;
+    color: whitesmoke;
+    position: fixed;
+    left: 16cm;
 }
 
 #Back:hover {
-  animation: pulse_2 2s;
-  font-size: 5cm;
-  position: fixed;
-  left: 12cm;
-  color: black;
-  cursor: pointer;
+    animation: pulse_2 2s;
+    font-size: 5cm;
+    position: fixed;
+    left: 12cm;
+    color: black;
+    cursor: pointer;
+}
+
+#display-image {
+    width: 400px;
+    height: 225px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+    background-color: antiquewhite;
 }

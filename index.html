@@ -2,68 +2,92 @@
 
 
 <html lang="de">
-  <head>
+
+<head>
+
     <link rel="stylesheet" href="mystyle.css">
     <title>Find Your Answers</title>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="A forum website where not so frequently asked questions will be answered"
-    />
+    <meta name="description" content="A forum website where not so frequently asked questions will be answered" />
     <meta name="keywords" content="HTML,Questions,answers,forums" />
     <meta name="Author" content="Leonard Bingöl" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>src="script.js"</script>
-    
-  </head>
-  <body>
+    <script>
+        src = "script.js"
+    </script>
 
-  <header>
-    
-    <div class="registration">
-     <a href="index.html">Home</a>
-     <br>
-     <a href="Registration.html">Register</a>
-    </div>
-    <div class="Überschrift">
-      <h1>Find your Answers</h1>
+</head>
 
-      <h2>And share your knowledge</h2>
-    </div>
-  </header>
+<body>
 
-  <main>
-    <div class="Text">
-      <p>
-        Join the comunity by clicking on the Registration link and signing up
-        for free
-      </p>
-      <p>
-        A public platform building the definitive collection of coding questions
-        & answers
-      </p>
-      <p></p>
-      <p>A private collaboration & knowledge sharing platform</p>
-    </div>
-    
+    <header>
 
-  </main>
-  <footer>
-    <div id="Sprache">
-      <h3 class="language">Select preffered language</h3>
-      <label for="language">Language:</label>
-      <select id="Language" name="" onchange="javascript:location.href = this.value;">
+        <div class="registration">
+            <a href="index.html">Home</a>
+            <br>
+            <a href="Registration.html">Register</a>
+        </div>
+        <div class="Überschrift">
+            <h1>Find your Answers</h1>
+
+            <h2>And share your knowledge</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="Text">
+            <p>
+                Join the comunity by clicking on the Registration link and signing up for free
+            </p>
+            <p>
+                A public platform building the definitive collection of coding questions & answers
+            </p>
+            <p></p>
+            <p>A private collaboration & knowledge sharing platform</p>
+        </div>
+        <br>
+        <br>
+        <H1>Share your favorite piture now: </H1>
+
+        <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+        <script>
+            const image_input = document.querySelector("#image-input");
+
+            image_input.addEventListener("change", function() {
+                const reader = new FileReader();
+                reader.addEventListener("load", () => {
+                    const uploaded_image = reader.result;
+                    document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+                });
+                reader.readAsDataURL(this.files[0]);
+            });
+
+            const formData = new FormData();
+            formData.append("image-input", image - input[0]);
+            fetch(endpoint, {
+                methord: "post",
+                body: formData
+            }).catch(console.error)
+        </script>
+        <div id="display-image"></div>
+
+    </main>
+    <footer>
+        <div id="Sprache">
+            <h3 class="language">Select preffered language</h3>
+            <label for="language">Language:</label>
+            <select id="Language" name="" onchange="javascript:location.href = this.value;">
         <option value="English">English</option>
         <option value="languageSelector.html">German</option>
         <option value="languageSelector.html">Slovak</option>
       </select>
-    </div>
-    <a href ="https://stackoverflow.com">
-      <img src="Images/1280px-Stack_Overflow_logo.svg.png" alt="Hyperlink_SOF">
-    </a>
+        </div>
+        <a href="https://stackoverflow.com">
+            <img src="Images/1280px-Stack_Overflow_logo.svg.png" alt="Hyperlink_SOF">
+        </a>
 
-  </footer>
-  
+    </footer>
+
 
 </body>
 
